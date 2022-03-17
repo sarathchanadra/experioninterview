@@ -1,0 +1,28 @@
+@import "../../style/scss/variables";
+
+.sidebar-containter {
+  z-index: 15;
+  width: 80px;
+  background-color: $primary-color;
+
+  & .sidebar-inner {
+    padding-top: 120px;
+    & .nav-menu {
+      padding-left: 0px;
+      & li {
+        padding-left: 30px;
+        width: 80px;
+        height: 80px;
+        align-items: center;
+        display: flex;
+
+        &:hover {
+          background-color: $primary-color-hover;
+        }
+      }
+      & .active {
+        background-color: $primary-color-hover;
+      }
+    }
+  }
+}

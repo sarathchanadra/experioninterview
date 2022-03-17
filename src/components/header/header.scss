@@ -1,0 +1,77 @@
+@import "../../style/scss/variables";
+
+.app-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  z-index: 10;
+  transition: all 0.2s;
+  .app-header__content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+    padding: 0 1.5rem;
+    height: 60px;
+    .app-header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .app-header-right {
+      align-items: center;
+      display: flex;
+      margin-left: auto;
+    }
+  }
+}
+
+.app-header__logo {
+  padding: 0 1.5rem;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  transition: width 0.2s;
+  background-color: $primary-color;
+}
+.app-header__menu {
+  display: none;
+  padding: 0 1.5rem;
+  height: 60px;
+  align-items: center;
+}
+.header-btn-lg {
+  display: flex;
+  align-items: center;
+  & p {
+    margin: 0px 5px 0px 5px;
+    font-weight: 500;
+  }
+}
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 1.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+  margin-left: 0.5rem;
+}
+.icons-container {
+  border-right: 1px solid #0f255f;
+  margin: 0 15px 0 15px;
+
+  & img {
+    padding: 5px;
+  }
+}

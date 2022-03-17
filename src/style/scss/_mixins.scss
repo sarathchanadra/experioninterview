@@ -39,11 +39,7 @@
   }
   cursor: pointer;
 }
-@mixin btn-outline {
-  border: solid 1px $primarybtn-color !important;
-  background-color: transparent;
-  color: $primarybtn-color;
-}
+
 @mixin thm-card {
   background-color: #fff;
   border: 1px solid #dbdbdb;

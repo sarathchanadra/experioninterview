@@ -1,0 +1,41 @@
+@import "../../style/scss/mixins";
+
+.filter-contianer {
+  margin-bottom: 15px;
+  & p {
+    font-size: 14px;
+    color: #041131;
+    margin-bottom: 0px;
+  }
+  & .filter-tile-section {
+    display: flex;
+    & .slection-tile {
+      min-width: 80px;
+      height: 40px;
+      background-color: #e8e8ff;
+      margin: 15px 15px 15px 0px;
+      align-items: center;
+      padding: 5px;
+      display: flex;
+      justify-content: space-around;
+      @include radius(5px);
+      & img {
+        margin-left: 10px;
+      }
+    }
+  }
+  & .btn-filter {
+    height: 40px;
+    width: 80px;
+    @include radius(5px);
+    padding: 5px;
+    font-size: 14px;
+    background: transparent;
+    color: #0f42df;
+    border: 1px solid #0f42df;
+    margin: 15px 15px 15px 0px;
+  }
+  & .btn-filter-borderless {
+    border: none !important;
+  }
+}
